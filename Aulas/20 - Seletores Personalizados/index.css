@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body {
+    background-color: #E8FCC2;
+}
+
+h1 {
+    color: #14453D;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: white;
+}
+
+h2 {
+    color: #B1CC74;
+}
+
+p {
+    text-align: justify;
+}
+
+.destaque {
+    background-color: yellow;
+}
