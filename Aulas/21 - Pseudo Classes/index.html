@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        div.principal {
+            display: inline-block;
+            background-color: lightgray;
+            text-align: center;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+        }
+
+        h1 {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+
+        div.principal:hover {
+            background-color: yellow;
+        }
+
+        div#escondido > p {
+            display: none;
+        }
+        
+        div#escondido:hover > p {
+            display: block;
+            background-color: red;
+            color: white;
+        }
+
+        div#escondido:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Passe o mouse sobre as caixas para mudar a cor</h1>
+    <div class="principal" id="d1">01</div>
+    <div class="principal" id="d2">02</div>
+    <div class="principal" id="d3">03</div>
+
+    <h1>Exemplo de Hover</h1>
+    <div id="escondido">
+        PASSE O MOUSE AQUI
+        <p>TEXTO ESCONDIDO!</p>
+    </div>
+</body>
+</html>
