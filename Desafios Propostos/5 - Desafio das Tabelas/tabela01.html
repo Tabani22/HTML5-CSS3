@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(255, 96, 96);
+        }
+
+        main {
+            background-color: rgb(255, 255, 255);
+            width: 800px;
+            padding: 20px 0px 50px 0px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.148);
+
+            position: absolute;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+        main h1 {
+            padding: 10px 0px 15px 0px;
+            text-align: center;
+        }
+
+        table {
+            width: 300px;
+            border-collapse: collapse;
+            font-weight: bolder;
+            margin: auto;
+            text-align: center;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        </style>
+</head>
+<body>
+    <main>
+    <h1>Desafio de Tabelas Parte 2</h1>
+    <!--
+    HIERARQUIA DE TABELAS (simples)
+    TABLE = tabela
+        TABLE ROW = linha de tabela
+            TABLE HEADER = cabeçalho de tabela 
+            TABLE DATA = dado de tabela
+    -->
+
+    <table>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td colspan="4">N</td>
+            
+        </tr>
+    </table>
+    </main>
+</body>
+</html>
